@@ -33,9 +33,9 @@ const Tela = () => {
     }
     const proximoQuadrado = quadrados.slice();
     if (xProximo) {
-      proximoQuadrado[i] = 'X';
+      proximoQuadrado[i] = '</>';
     } else {
-      proximoQuadrado[i] = 'O';
+      proximoQuadrado[i] = '@';
     }
     setSquadrados(proximoQuadrado);
     setXProximo(!xProximo);
@@ -48,7 +48,7 @@ const Tela = () => {
   } else if (quadrados.every(Boolean)) {
     status = 'Empate!';
   } else {
-    status = 'Próximo a jogar: ' + (xProximo ? 'X' : 'O');
+    status = 'Próximo a jogar: ' + (xProximo ? '</>' : '@');
   }
 
   return (
