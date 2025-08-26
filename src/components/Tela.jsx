@@ -74,6 +74,7 @@ const Tela = () => {
       </button>
 
       <h6 className="text-[10px] mt-2">&copy;2025-Direitos reservados</h6>
+      
     </div>
 
      </>
